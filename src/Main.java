@@ -121,4 +121,6 @@ def check_for_greeting(sentence):
     for word in sentence.words:
         if word.lower() in GREETING_KEYWORDS:
             return random.choice(GREETING_RESPONSES)
+            
+        	On-boarding complete
  */
