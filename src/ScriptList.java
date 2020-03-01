@@ -20,7 +20,7 @@ public class ScriptList {
 		// Scanner grabs all the scripts from said text file
 		try(Scanner in = new Scanner(file);) {
 			// read list of scripts from a test file
-			while (in.hasNext()){
+			while (in.hasNext()){ //continues to loop through the file until all pre-generated responses have been turned into strings
 				String script = in.nextLine();
 				scripts.add(new Script(script));
 				}
