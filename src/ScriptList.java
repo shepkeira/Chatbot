@@ -20,8 +20,10 @@ public class ScriptList {
 		// Scanner grabs all the scripts from said text file
 		try(Scanner in = new Scanner(file);) {
 			// read list of scripts from a test file
-			String script = in.nextLine();
-			scripts.add(new Script(script));
+			while (in.hasNext()){
+				String script = in.nextLine();
+				scripts.add(new Script(script));
+				}
 			
 		} catch (FileNotFoundException e) {
 			System.out.println("File not found D:");
