@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class ScriptList {
 	// array list to holds list of scripts
-	ArrayList<Script> scripts = new ArrayList<Script>();
+	private ArrayList<Script> scripts = new ArrayList<Script>();
 	
 	public ScriptList(File file) {
 		importScripts(file);
@@ -20,11 +20,11 @@ public class ScriptList {
 		// Scanner grabs all the scripts from said text file
 		try(Scanner in = new Scanner(file);) {
 			// read list of scripts from a test file
-			//in.useDelimiter("\n");//new script every line break
 			String script = in.nextLine();
 			scripts.add(new Script(script));
 			
 		} catch (FileNotFoundException e) {
+			System.out.println("File not found D:");
 			e.printStackTrace();
 		}
 		

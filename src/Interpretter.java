@@ -24,6 +24,7 @@ public class Interpretter {
 		if (checkForX(message.msg, "PHRASE/ WORD TO CHECK FOR")) {
 			// do ______ instead of generating a reply from a script
 			// 	 - example of when to do this would be messages regarding serious topics
+			// 		+ could be used for greetings as well :)
 		}
 		
 		message.type = Interpretter.interpretType(message.msg);
@@ -33,9 +34,9 @@ public class Interpretter {
 	
 	private static MessageType interpretType(String msg) {
 		/* feeds string to DialogFlow to determine what the user intends
-		 * If DialogFlow decides Intention is a Statement -> return MessageType.Statement
-		 * else if Question -> return MessageType.Question
-		 * else Other
+		 * 		If DialogFlow decides Intention is a Statement -> return MessageType.Statement
+		 * 		else if Question -> return MessageType.Question
+		 * 		else return Other
 		 */
 		return null;
 	}

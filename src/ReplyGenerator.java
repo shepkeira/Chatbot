@@ -19,14 +19,14 @@ import java.io.File;
 public class ReplyGenerator {
 	
 	// scripts the bot will be used to help generate replies
-	final static ScriptList otherScripts = new ScriptList(new File("OtherScripts.txt"));
-	final static ScriptList questionScripts = new ScriptList(new File("QuestionScripts.txt"));
-	final static ScriptList statementScripts = new ScriptList(new File("StatementScripts.txt"));
-	// note that none of these scripts have been written yet.
-	// we also need to decide on how we want to write them
+	final private static ScriptList otherScripts = new ScriptList(new File("OtherScripts.txt"));
+	final private static ScriptList questionScripts = new ScriptList(new File("QuestionScripts.txt"));
+	final private static ScriptList statementScripts = new ScriptList(new File("StatementScripts.txt"));
+		// note that none of these scripts have been written yet.
+		// we also need to decide on how we want to write them so we can develop methods to use them
 	
 	
-	public static Reply GenerateReply (Message message, String[] keywords) {
+	public static String GenerateReply (Message message, String[] keywords) {
 		// keywords will likely need to be broken into two arrays: Verbs and Pronouns
 		// and, ideally, we take the excess and use it in a way that echos properly
 		//  - Note that this echo is what makes the conversation much more believable
@@ -43,18 +43,18 @@ public class ReplyGenerator {
 	// Used in cases where the Bot can't decipher what the user is saying
 	//  - My thought is we keep a list of questions to ask the user when this happens
 	// 		+ possibly make a memory class like the one in ELIZA
-	private static Reply GenerateOtherReply(Message message, String[] keywords) {
+	private static String GenerateOtherReply(Message message, String[] keywords) {
 		return null;
 	}
 
 	// Used when the user asks the bot a question
-	private static Reply GenerateQuestionReply(Message message, String[] keywords) {
+	private static String GenerateQuestionReply(Message message, String[] keywords) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	// Used when the user makes a statement that follows the form: @Pronoun @Verb @Excess
-	private static Reply GenerateStatementReply(Message message, String[] keywords) {
+	private static String GenerateStatementReply(Message message, String[] keywords) {
 		// TODO Auto-generated method stub
 		return null;
 	}
