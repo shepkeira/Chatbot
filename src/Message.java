@@ -8,7 +8,6 @@ public class Message {
 	
 	public Message(String msg) {
 		this.msg = msg;
-		this.type = Interpretter.interpretType(msg);
-		this.keywords = Interpretter.getKeywords(msg);
+		Interpretter.process(this); // shoots message to DialogFlow for inspection
 	}
 }

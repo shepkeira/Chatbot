@@ -1,10 +1,22 @@
 package botPackage;
 
-// this is the only class that is connected with DialogFlow
+// this is the only class that is directly connected to DialogFlow
 
 public class Interpretter {
 	
-	public static MessageType interpretType(String msg) {
+	public static void process(Message message) {
+		
+		if (checkForX(message.msg, "PHRASE/ WORD TO CHECK FOR")) {
+			// do ______ instead of generating a reply from a script
+			// 	 - example of when to do this would be messages regarding serious topics
+		}
+		
+		message.type = Interpretter.interpretType(message.msg);
+		message.keywords = Interpretter.getKeywords(message.msg);
+		
+	}
+	
+	private static MessageType interpretType(String msg) {
 		/* feeds string to DialogFlow to determine what the user intends
 		 * If DialogFlow decides Intention is a Statement -> return MessageType.Statement
 		 * else if Question -> return MessageType.Question
@@ -13,7 +25,7 @@ public class Interpretter {
 		return null;
 	}
 
-	public static String[] getKeywords(String msg) {
+	private static String[] getKeywords(String msg) {
 		// returns a list of the Key Entities of a sentence (Pronounds and Verbs)
 		
 		/* EXAMPLE
@@ -39,9 +51,10 @@ public class Interpretter {
 		 */
 	}
 	
-	public static boolean checkForX (String msg, String x) {
+	private static boolean checkForX (String msg, String x) {
 		// here we could check if the string x is present in the message
 		
 		return msg.contains(x); // x could be phrases that indicate self harm
 	}
+
 }
