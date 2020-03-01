@@ -2,6 +2,21 @@ package botPackage;
 
 // this is the only class that is directly connected to DialogFlow
 
+/* INTERPRETTER CLASS IS FOR OBTAINING INFORMATION
+ *	- this would help the following interaction
+ *
+ * Input: String msg
+ * 		+ EX: "I feel like running away"
+ *  - keywords identified
+ *  - keywords transformed ("I" -> "you")
+ *  - keywords get slotted into a script 
+ *  	+ EX: "Why do ___[@Pronoun] ______[@Verb] _____[excess]"
+ *  - transformed keywords get slotted into script
+ *  	+ EX: "Why do you feel like running away"
+ *  Output: String reply
+ *  	+ EX: "Why do you feel like running away"
+ */
+
 public class Interpretter {
 	
 	public static void process(Message message) {
@@ -37,18 +52,6 @@ public class Interpretter {
 		 */
 		return null;
 		
-		/* END GOAL OF OBTAINING THESE KEY WORDS
-		 * Input: String msg
-		 * 		+ EX: "I feel like running away"
-		 *  - keywords identified
-		 *  - keywords transformed ("I" -> "you")
-		 *  - keywords get slotted into a script 
-		 *  	+ EX: "Why do ___[@Pronoun] ______[@Verb] _____[excess]"
-		 *  - transformed keywords get slotted into script
-		 *  	+ EX: "Why do you feel like running away"
-		 *  Output: String reply
-		 *  	+ EX: "Why do you feel like running away"
-		 */
 	}
 	
 	private static boolean checkForX (String msg, String x) {
