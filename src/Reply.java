@@ -11,4 +11,8 @@ public class Reply {
 		this.reply = ReplyGenerator.GenerateReply(this.originalMessage,
 				this.originalMessage.keywords);
 	}
+	
+	public Reply(String reply){
+		this.reply = reply;
+	}
 }
