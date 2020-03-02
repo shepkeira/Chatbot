@@ -5,6 +5,10 @@ class Interpreter:
             #do ____ instead of generating a reply from a script
             # -exampe of when to do this would be messages regarding serious topics
             # + could be used for greetings as well :)
+        # if ToneBot identifies Tone: Message.reply = ToneBots reply
+        
+        
+            
         message.msgType = Interpreter.interpreterType(message.msg);
         message.keywords = self.getKeywords(message.msg);
 
