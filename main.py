@@ -24,28 +24,30 @@ session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
 session_client = dialogflow.SessionsClient()
 session = session_client.session_path(DIALOGFLOW_PROJECT_ID, SESSION_ID)
 
-def getresponse(text_to_be_analyzed, DIALOGFLOW_LANGUAGE_CODE, session):
-    text_input = dialogflow.types.TextInput(language_code=DIALOGFLOW_LANGUAGE_CODE, text=text_to_be_analyzed)
+
+def getresponse(text, lang_code, sech):
+    text_input = dialogflow.types.TextInput(language_code=lang_code, text=text)
     query_input = dialogflow.types.QueryInput(text=text_input)
     try:
-        response = session_client.detect_intent(session, query_input)
+        response = session_client.detect_intent(sech, query_input)
     except InvalidArgument:
         raise
-    #print("Query text:", response.query_result.query_text)
+    # print("Query text:", response.query_result.query_text)
     print("Detected intent:", response.query_result.intent.display_name)
-    #print("Detected intent confidence:", response.query_result.intent_detection_confidence)
+    # print("Detected intent confidence:", response.query_result.intent_detection_confidence)
     if not response.query_result.fulfillment_text:
         print("Dr. Azile: Tell me more")
     else:
-        #print("Fulfillment text:", response.query_result.fulfillment_text)
+        # print("Fulfillment text:", response.query_result.fulfillment_text)
         print("Dr. Azile: ", response.query_result.fulfillment_text)
+
 
 print("Say hi to get started")
 text_to_be_analyzed = input("You: ")
 print("Formal Disclaimer that this is a chatbot and not a professional help bot for people.")
-print("Hello my name is Dr. Azile, I am here to help with your psychological needs. Please know that I am not a real person; "
-      "I am a chat bot, created by some amazing people to help you. If you need a real person or I feel you need someone real I can give you resources like a helpline number.")
-
+print("Hello my name is Dr. Azile, I am here to help with your psychological needs. Please know that I am not a real "
+      "person; I am a chat bot, created by some amazing people to help you. If you need a real person or I feel you "
+      "need someone real I can give you resources like a helpline number.")
 print("Dr. Azile: To get started I have a few question about you. Just let me know when you are ready")
 text_to_be_analyzed = input("You: ")
 print("Dr. Azile: How old are you?")
@@ -65,7 +67,7 @@ anxiety = input("You: ")
 print("Dr. Azile: Ok lets get started. Tell me about how you are feeling today.")
 
 done = False
-while(not done):
+while not done:
     text_to_be_analyzed = input("You: ")
     if text_to_be_analyzed == "bye":
         done = True
