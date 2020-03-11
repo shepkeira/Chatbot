@@ -42,7 +42,7 @@ def getresponse(text, lang_code, sech):
         print("Dr. Azile: ", response.query_result.fulfillment_text)
 
 
-print("Say hi to get started")
+print("Say hi to get started. Say bye at anytime to end the conversation.")
 text_to_be_analyzed = input("You: ")
 print("Formal Disclaimer that this is a chatbot and not a professional help bot for people.")
 print("Hello my name is Dr. Azile, I am here to help with your psychological needs. Please know that I am not a real "
