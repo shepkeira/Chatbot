@@ -16,7 +16,9 @@ The application was created as part of COSC 310 Assignment Two.  It will only be
  
 ## Class Structure:
 During the initial planning phase, we created a class structure; however, we changed our design to focus on the Dialogflow API. We created categories of intents (anxiety, depression, loneliness, school, etc), to which Dialogflow takes in an unstructured user input, searching for keywords (DialogFlow Entities) to match to the categories. To achieve this, training is necessary. Training involves identifying these entities in example inputs. Take, for example, the input, "I am feeling anxious." From this, DialogFlow then identifies the key entities such as "anxious." Then DialogFlow selects a relevant canned response that is used as output, which is displayed on the terminal. 
-Everything is housed within Main.py, which integrates the input and canned responses. A high-level overview of the original structure can be seen below.
+Everything is housed within Main.py, which integrates the input and canned responses.
+
+Although it was not used in our final implementation, a high-level overview of the original structure can be seen below.
 ![](HighLevelClassBreakDown.png)
 
  
