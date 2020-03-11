@@ -10,9 +10,13 @@ The application was created as part of COSC 310 Assignment Two.  It will only be
 ## Build Status:
  In development. Python code is currently being refactored. The bot does respond to basic input, but needs to be refined and made more robust. Dialogflow is in need of more thorough training.
  
- ## Tech Framework Used:
+ ## Tech Framework(s) Used:
  - Dialogflow (backend was originally in Java, but had to switch to python for integration)
  - SDLC: Scrum (utilized in the design phase, switched more to XP during development to utilize paired programming)
+ 
+## Class Structure:
+During the initial planning phase, we created a class structure; however, we changed our design to focus on the Dialogflow API. We created categories of intents (anxiety, depression, loneliness, school, etc), to which Dialogflow takes in an unstructured user input, searching for keywords to match to the categories. To achieve this, training is necessary. Training involves indentifying personal pronouns, verbs, as well as adjectives. From this, default responses are used as output, which is displayed on the terminal. 
+Everything is housed within Main.py, which integrates the input and canned responses. A high-level overview of the original structure can be seen below.
  
 ## How to interact with Azile:
 1. Download the repository files to the local machine.
