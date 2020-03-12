@@ -45,11 +45,11 @@ Specific phrases, words will prompt individual responses.
 In our project, we utilized Dialogflow, a Google-owned developer of human-computer interaction technologies based on Natural Language conversations (WIKI). Within the Dialogflow client, where all API calls are handled, are different intents coded to respond to different inputs. The intents identify emotions and phrases, then in the coded responses, will either prompt the user to elaborate more or provide specific actions for the user to follow. Such as, our bot must advise users to seek professional health support if they express self-harming/ suicidal tendencies. All uncategorizable, and unrecognized inputs will trigger a fall back intent that feeds generic conversation prompts. Our code is within `main.py` that handles the chat interface, an API interaction.
 
  ## Testing:
- Given the non-deterministic nature of DialogueFlow, software testing (such as unit tests) does not serve significant purpose because the test itself will impact the cloud services – further changing how the bot learns to behave.
+ Given the non-deterministic nature of DialogFlow, software testing (such as unit tests) does not serve significant purpose because the test itself will impact the cloud services – further changing how the bot learns to behave.
 Given that our intent was to make a bot capable of conversational flow to some degree, our input is infinite. This means 100% test coverage is impossible.
 
 We focused on two components to our conversational flow testing.
-1) Will valid input be recognised by the chatbot? Will it receive an intent? Will it be delivered a fitting response from DialogueFlow? At this point in development, explicitly including recognized keywords is required.
+1) Will valid input be recognised by the chatbot? Will it receive an intent? Will it be delivered a fitting response from DialogFlow? At this point in development, explicitly including recognized keywords is required.
 2) Can our bot handle unexpected user input without crashing? Will it deliver a default response? Can its default response attempt to elicit user input that gravitates back towards recognized topics.
 
 For interaction with dialogflow, Google Assitant was the primary terminal used for user input.
