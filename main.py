@@ -1,6 +1,8 @@
 """Install the following requirements:
     dialogflow        0.5.1
     google-api-core   1.4.1
+    pip install dialogflow==0.5.1
+    pip install google-api-core==1.4.1
 """
 import os
 import sys
