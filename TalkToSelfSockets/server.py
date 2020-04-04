@@ -1,3 +1,8 @@
+'''
+Note: In order to learn sockets in python we followed the tutorial series linked below. 
+Our code shares a similar structure but it has been modified to handle clients that are bots
+https://www.youtube.com/watch?v=Lbfe3-v7yE0&list=PLQVvvaa0QuDdzLB_0JSTTcl8E8jsJLhR5
+'''
 import socket
 import select
 
@@ -6,21 +11,13 @@ HEADER_LENGTH = 10
 IP = "127.0.0.1"
 PORT = 1234
 
-# Create a socket
-# socket.AF_INET - address family, IPv4, some otehr possible are AF_INET6, AF_BLUETOOTH, AF_UNIX
-# socket.SOCK_STREAM - TCP, conection-based, socket.SOCK_DGRAM - UDP, connectionless, datagrams, socket.SOCK_RAW - raw IP packets
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# SO_ - socket option
-# SOL_ - socket option level
-# Sets REUSEADDR (as a socket option) to 1 on socket
 server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-# Bind, so server informs operating system that it's going to use given IP and port
-# For a server using 0.0.0.0 means to listen on all available interfaces, useful to connect locally to 127.0.0.1 and remotely to LAN interface IP
 server_socket.bind((IP, PORT))
 
-# This makes server listen to new connections
+# This makes server listen for new connections
 server_socket.listen()
 
 # List of sockets for select.select()
@@ -31,7 +28,8 @@ clients = {}
 
 print(f'Listening for connections on {IP}:{PORT}...')
 
-# Handles message receiving
+# Method we created for handling message receiving
+# We have our clients messaging in a specific order so it was necessary to change this
 def receive_message(client_socket):
 
     try:
@@ -50,11 +48,7 @@ def receive_message(client_socket):
         return {'header': message_header, 'data': client_socket.recv(message_length)}
 
     except:
-
-        # If we are here, client closed connection violently, for example by pressing ctrl+c on his script
-        # or just lost his connection
-        # socket.close() also invokes socket.shutdown(socket.SHUT_RDWR) what sends information about closing the socket (shutdown read/write)
-        # and that's also a cause when we receive an empty message
+        
         return False
 
 while True:
