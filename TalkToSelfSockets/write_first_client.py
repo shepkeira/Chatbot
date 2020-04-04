@@ -1,3 +1,9 @@
+'''
+Note: In order to learn sockets in python we followed the tutorial series linked below. 
+Our code shares a similar structure but it has been modified to handle clients that are bots
+https://www.youtube.com/watch?v=Lbfe3-v7yE0&list=PLQVvvaa0QuDdzLB_0JSTTcl8E8jsJLhR5
+'''
+
 import socket
 import select
 import errno
@@ -38,7 +44,7 @@ def getresponse(text, lang_code, sech):
     # print("Detected intent:", response.query_result.intent.display_name)
     # print("Detected intent confidence:", response.query_result.intent_detection_confidence)
     if not response.query_result.fulfillment_text:
-        print("Dr. Azile: Tell me more")
+        print("Dr. Azile: Tell me more") #note this should never occur
     else:
         # print("Fulfillment text:", response.query_result.fulfillment_text)
         return response.query_result.fulfillment_text # I think this is an object, not just a string
@@ -52,9 +58,6 @@ IP = "127.0.0.1"
 PORT = 1234
 my_username = input("Username: ")
 
-# Create a socket
-# socket.AF_INET - address family, IPv4, some otehr possible are AF_INET6, AF_BLUETOOTH, AF_UNIX
-# socket.SOCK_STREAM - TCP, conection-based, socket.SOCK_DGRAM - UDP, connectionless, datagrams, socket.SOCK_RAW - raw IP packets
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect to a given ip and port
@@ -69,6 +72,7 @@ username = my_username.encode('utf-8')
 username_header = f"{len(username):<{HEADER_LENGTH}}".encode('utf-8')
 client_socket.send(username_header + username)
 
+#method for recieving messages from the other DialogFlow Agent
 def handle_input(msg_recieved):
     # Wait for user to input a message
     print(msg_recieved)
@@ -85,6 +89,7 @@ def handle_input(msg_recieved):
     else:
         print("no message recieved")
 
+# This kicks off the conversation so the two chatbots can begin conversing
 handle_input("Hello!")
 
 while True:
