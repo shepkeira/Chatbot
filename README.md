@@ -67,3 +67,4 @@ For interaction with dialogflow, Google Assitant was the primary terminal used f
 Wikpedia:  https://en.wikipedia.org/wiki/ELIZA
 Readme:  https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
 Testing: https://chatbotsmagazine.com/how-to-test-a-chatbot-part-1-why-is-it-so-hard-10f1ee8ca37d
+Sockets: https://www.youtube.com/watch?v=Lbfe3-v7yE0&list=PLQVvvaa0QuDdzLB_0JSTTcl8E8jsJLhR5
