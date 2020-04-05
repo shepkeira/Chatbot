@@ -10,8 +10,10 @@ Since assignment two we have implemented a GUI (which can be found in the Chatbo
 Changes to Dialogflow include additional intents to enhance conversation (topics such as family, anger, and school) as well as bolstering previously established intents. 
 
 The GUI allows the user to interact with the agent in a nicer interface. As the conversation occurs, the user can scroll to see previous responses. 
+![](GUI_ExtraTopicsExample.png)
 
-Sockets are utilized to allow two instances of the agent to talk. A Server and two Clients are run in order to facilitate having one instance of the bot initiate conversation. 
+Sockets are utilized to allow two instances of the agent to talk. A Server and two Clients are run in order to facilitate having one instance of the bot initiate conversation.
+![](socketsConversation.png)
 
 ## Motivation:
 The application was created as part of COSC 310 Assignment Two, with additional features for the Project (such as creating a GUI, having additional topics, handling spelling, and communication via sockets).  It will only be maintained during the duration of this course assignment completion.  It is not intended for real world existence.
