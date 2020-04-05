@@ -2,17 +2,17 @@
 Members: Katrina Martel, Jeff Hatton, Keira Shepherd, Matthew Currie, Brian Su
 
 ## What is Azile?
-Azile is a psychiatrist bot that is based on the psychiatrist bot "Eliza" created by Joseph Weizenbaum from 1964 to 1966. Azile aims to converse with the user about their day to day and has a focus on helping users with anxiety. Despite Azile's focus on anxiety, it is still suited to help people experiencing different types of emotions. “Eliza”.  It was created as a general chatbot and not a professional help bot for individuals.  It is meant to give assistance dependant on key words entered.
+Azile is a psychiatrist bot that is based on the psychiatrist bot "Eliza" created by Joseph Weizenbaum from 1964 to 1966. Azile aims to converse with the user about their day to day feelings and has a focus on helping users with anxiety. Despite Azile's focus on anxiety, it is still suited to help people experiencing different types of emotions. It was created as a general chatbot and not a professional help bot for individuals.  It is meant to give assistance dependant on key words entered.
 
 ## Motivation:
-The application was created as an elaboration to COSC 310 Assignment Two.  It will only be maintained during the duration of this course assignment completion.  It is not intended for real world existence.
+The application was created as an elaboration to COSC 310 Assignment Two. The GUI serves to allow the user to input strings into a nicer interface, as well as the ability to view their recent conversation.
 
 ## Build Status:
- Nearing completion.
+Complete.
  
  ## Tech Framework(s) Used:
- - Dialogflow (backend was originally in Java, but had to switch to python for integration)
- - SDLC: Scrum (utilized in the design phase, switched more to XP during development to utilize paired programming)
+ - Dialogflow
+ - SDLC: XP (paired programming)
  - Tkinter
  
  
