@@ -2,7 +2,7 @@
 Members: Katrina Martel, Jeff Hatton, Keira Shepherd, Matthew Currie, Brian Su
 
 ## What is Azile?
-Azile is a psychiatrist bot that is based on the psychiatrist bot "Eliza" created by Joseph Weizenbaum from 1964 to 1966. Azile aims to converse with the user about their day to day and has a focus on helping users with anxiety. Despite Azile's focus on anxiety, it is still suited to help people experiencing different types of emotions. “Eliza”.  It was created as a general chatbot and not a professional help bot for individuals.  It is meant to give assistance dependant on key words entered.
+Azile is a psychiatrist bot that is based on the psychiatrist bot "Eliza" created by Joseph Weizenbaum from 1964 to 1966. Azile aims to converse with the user about their day to day feelings and has a focus on helping users with anxiety. Despite Azile's focus on anxiety, it is still suited to help people experiencing different types of emotions. It was created as a general chatbot and not a professional help bot for individuals.  It is meant to give assistance dependant on key words entered.
 
 ## Changes From Assignment Two
 Since assignment two we have implemented a GUI (which can be found in the Chatbot-GUI folder), and communication via sockets (in the TalkToSelfSockets folder). Please note that in the folders there are specific README files with detailed instructions for how to run those components. 
@@ -14,10 +14,10 @@ The GUI allows the user to interact with the agent in a nicer interface. As the 
 Sockets are utilized to allow two instances of the agent to talk. A Server and two Clients are run in order to facilitate having one instance of the bot initiate conversation. 
 
 ## Motivation:
-The application was created as part of COSC 310 Assignment Two.  It will only be maintained during the duration of this course assignment completion.  It is not intended for real world existence.
+The application was created as part of COSC 310 Assignment Two, with additional features for the Project (such as creating a GUI, having additional topics, handling spelling, and communication via sockets).  It will only be maintained during the duration of this course assignment completion.  It is not intended for real world existence.
 
 ## Build Status:
- In development. Python code is currently being refactored. The bot does respond to basic input, but needs to be refined and made more robust. Dialogflow is in need of more thorough training.
+ Complete. Python code has been refactored. The bot responds to basic input, and has been refined since assignment two to be  more robust. The Dialogflow agent has also been trainined.
  
  ## Tech Framework(s) Used:
  - Dialogflow (backend was originally in Java, but had to switch to python for integration)
@@ -32,6 +32,8 @@ Although it was not used in our final implementation, a high-level overview of t
 
  
 ## How to interact with Azile:
+NOTE: This is particular to Assignment Two. To view the most recent updates, please read the README files particular to the "TalkToSelfSockets" and "Chatbot-GUI" folders.
+
 1. Download the repository files to the local machine.
 2. Import the repository into desired python IDE or continue using command-line interfaces of preference (e.g., command prompt).  
 3. Install the following dependencies Dialogflow (version 0.5.1) and Google-api-core (version 1.4.1). Via pip run:
