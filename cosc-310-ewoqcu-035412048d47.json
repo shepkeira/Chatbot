@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cosc-310-ewoqcu",
+  "private_key_id": "035412048d47477858cc56254f81bd8e6ad6f160",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCaYqVmTXCIhsJX\n+W8+GeEvyUCBrKkw5NRrx3vjrcbuAWpNJN3dFsJeNN8XjVftO8hKXAiSX046857h\nTlhbjaNInjHlHMcnMCOIe4YIQ3FBRhkRef6I+REJXo7L2/ujzM1oT9XU/LOr49aI\nz1IQRdwxhccASDTfl2KbbrzJO589F3cfhLZFJqt4PJ+AeUql71LherIdMPE3ktiB\nPPm1mzz3hk30TWuah+0Bppczx2hIDYVJ7DQRmSXfJ7kGAKlAglTEBIPMMfU4DLiu\nFzbmTnEtrk9ocE+mz6QrV7bPYBxemqAq5BBKo0SCogdpF2J/iHjYlt1MppMvj79B\njQP+oV2/AgMBAAECggEAAoNsWR04CA3FUP8zo+Q+5oiGXA2Nafx+pIwmT2KWu9NW\nVuVOwPSMCDBToXSpOP3lw4V6coNSsWJ3jhlSSZgUccWsNGiJITWpSRjd+s6X343E\n3E7o7aa8HmbuFlY0nxbZZpAB5qYIrB4dcd5Wt2le8e5iR8ttrKp0qdfvJQEirsqS\nISEUr7ehkWApUGWyXzLnGQylG8oA+TW9rAmbrBtelZ+YhVKJ/12aHQ8a0a4Cnb2o\n8C56S1LdrMY/YR9RRyGKOhGDGWFCEcoq4QOyXKu6QNOX0X8jPtMAU/DlOgPzPNAz\nw1i559lP/XXIkHhmWro3LPC2TXOEnSdFw1J99QTXgQKBgQDMy8xVCioU+iE4HVZn\nXuwmDyJ0Gm3MwRLCnyWPNj5iyYzNZjrvmtd/y6Gjdbw4WV72PyU+Hgg57OJohDIs\n/21Mje2kNIVWD9zUMCfoL3KssHm2SFUgOyA32aBtbPr+a/uJHM8N7lHa+jG6b4kI\nxsVqnk+DbBByDm99Q0/E2IZIcQKBgQDA/EBsC05vWUkE2IdBDhSq4bLWccupSlcF\nI/nMC6dS3wHRRkB1yIDJmvMhPRvhSrBIiatt7+WGXLHbwmxVd+FTvg3T1E81jlAL\nRURMxUPvi5tUZqzTpQ08M3pZg4MlDwlr0Gl80OR8cmL0Q5wyc/ho1vBCMi1XCOdA\nietLzpuhLwKBgB03vjErwBE6Fl8xIFCjJEHRyvKRirS5nvmRRwSFkqT5aFMtkJ76\nkmAzJx5w/6dyaK/tFl0kX7wT5cFPivEMiAVyAkN5EsTSgojrTeY8TroAe3zcGPj+\nNnyBWfgColSGB17qc0fjhl4db9bPbteHtEafy2xOkJIVKSbP4aON2KqhAoGAfhmV\n4sN0ie+WddMiddDEknAN0m/i+wh3WgWK6NhIii7r2hoEbrIH7TQRYAu1Fv4duBg0\n6w4RNT2GfilJboN5uaV7FYoqA72s8eBd46gWXwUjBwBcN6MmxcqBTNJRNDriFg/F\njehVFDgODrvK6XC7xY2EykxNMgzARnyYQh2LtcMCgYBlr/1Aq8GgufHgQkMpVcGY\nOYkjMAgy7cguOTgn4mDOPPgIoOtMejgmKDZuHeFznqWBs/t4+P3c/fx/n0wwTqCu\n/87TISPRLbAdOB5Rymw4hOp7WO7PXjx8gT49+TVMyC0oEGbz307w9PryD8bIWfte\nDcrwloxqU06rsXe6vkubnA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "cosc310-chatbox-public@cosc-310-ewoqcu.iam.gserviceaccount.com",
+  "client_id": "109813161148184083396",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cosc310-chatbox-public%40cosc-310-ewoqcu.iam.gserviceaccount.com"
+}

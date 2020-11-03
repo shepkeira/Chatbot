@@ -23,7 +23,7 @@ def do_thing(said, num):
 
 DIALOGFLOW_PROJECT_ID = 'cosc-310-ewoqcu'
 DIALOGFLOW_LANGUAGE_CODE = 'en-US'
-credential_path =  os.path.join(sys.path[0], "cosc-310-ewoqcu-db61ea9e0e22.json")
+credential_path =  os.path.join(sys.path[0], "cosc-310-ewoqcu-035412048d47.json")
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credential_path
 SESSION_ID = 'current-user-id'
 
